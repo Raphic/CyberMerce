@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/*================== Import style ==================*/
+@import "../css/header.css";
+@import "../css/main.css";
+@import "../css/footer.css";
+@import "../css/btn.css";
+@import "../css/responsive.css";

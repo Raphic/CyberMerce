@@ -1,13 +1,115 @@
-*{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+article{
+    width: 100%;
+    background: cyan;
+    margin: auto;
+    overflow: hidden;
 }
-html, body {
-    position: relative;
-    height: 100%;
+.ourServices{
+    width: 1550px;
+    margin: auto;
 }
-body {
-    font-family: 'Cinzel', serif;
-    font-family: 'Raleway', sans-serif;
+.ourServices h2.title{
+    margin-bottom: 30px;
+}
+.ourServices .serItem:nth-child(2) .list-01{
+    border-left: 1px solid #222021;
+    border-right: 1px solid #222021;
+}
+.ourServices .serItem{
+}
+.ourServices .wrapt-img{
+    width: 132px;
+    height: 134px;
+    margin: 0 auto 70px;
+}
+
+.whyChoose{
+    width: 1550px;
+    margin: auto;
+}
+.whyChoose .wrapt-img{
+    float: left;
+    margin-right: 40px;
+}
+
+
+.ourProducts{
+    width: 1550px;
+    margin: auto;
+}
+.proItem{
+    width: 358px;
+    height: 358px;
+    margin-bottom: 50px;
+    background: #ededed;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.proItem:last-child img{
+    margin-top: 80px;
+}
+.proItem h3{
+    width: 100%;
+    height: 110px;
+}
+
+.ourTechnology{
+    background:#242424 url(../image/background/bg-technology.png) no-repeat center center;
+    background-origin: content-box;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+}
+.ourTechnology h1{
+    color: #fff;
+}
+.ourTechnology .list-0{
+    width: 1550px;
+    margin: auto;
+}
+.ourTechnology .list-0 li{
+    width: 25%;
+    margin-bottom: 120px;
+}
+
+.valueSolution{
+    font-family: var(--font-h2);
+    background: #e5e5e5;
+    padding: 45px 0 40px;
+}
+.valueSolution > .flex{
+    width: 1550px;
+    margin: auto;
+    text-align: center;
+}
+.valueSolution h2{
+    font-size: 68px;
+    color: var(--color-01);
+}
+.valueSolution p {
+    font-size: 24px;
+    line-height: 0.8em;
+    margin-bottom: 0;
+}
+
+.footerTop{
+    width: 1550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }

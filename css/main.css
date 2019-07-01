@@ -2,11 +2,14 @@ article{
     width: 100%;
     background: cyan;
     margin: auto;
-    overflow: hidden;
+/*    overflow: hidden;*/
+}
+article > section{
+    width: 1550px;
+    margin: 60px auto;
 }
 .ourServices{
-    width: 1550px;
-    margin: auto;
+    margin-top: 63px;
 }
 .ourServices h2.title{
     margin-bottom: 30px;
@@ -24,8 +27,7 @@ article{
 }
 
 .whyChoose{
-    width: 1550px;
-    margin: auto;
+    margin-top: 227px;
 }
 .whyChoose .wrapt-img{
     float: left;
@@ -34,8 +36,7 @@ article{
 
 
 .ourProducts{
-    width: 1550px;
-    margin: auto;
+    margin-top: 166px;
 }
 .proItem{
     width: 358px;
@@ -63,34 +64,69 @@ article{
     height: 110px;
 }
 
+.clientSay{
+    margin-top: 137px;
+}
+.clientSay .title{
+    font-size: 36px;
+    text-align: left;
+    padding-left: 72px;
+    padding-right: 85px;
+    letter-spacing: 3.97px;
+}
+.clientSay .title:after{
+    height: 5px;
+    background: var(--bg-client);
+    position: relative;
+}
+
 .ourTechnology{
-    background:#242424 url(../image/background/bg-technology.png) no-repeat center center;
+    width: 100%;
+    background:#242424 url(../image/background/bg-technology.png) no-repeat top center;
     background-origin: content-box;
     background-size: 100%;
     color: #fff;
     text-align: center;
-}
-.ourTechnology h1{
+    margin: 134px auto 0;
+    padding: 60px 0 20px;
+} 
+.ourTechnology .title{
     color: #fff;
+    margin-bottom: 0;
+}
+.ourTechnology .title ~ p{
+    line-height: 0.8em;
+    font-size: 18px;
+    margin: 33px auto;
+}
+.ourTechnology .title ~ p + p{
+    font-family: var(--font-h1);
+    letter-spacing: 4.5px;
+    margin-top: 33px;
 }
 .ourTechnology .list-0{
     width: 1550px;
-    margin: auto;
+    margin: 83px auto 70px;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline
 }
 .ourTechnology .list-0 li{
     width: 25%;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
+
 .valueSolution{
+    width: 100%;
     font-family: var(--font-h2);
     background: #e5e5e5;
     padding: 45px 0 40px;
 }
 .valueSolution > .flex{
+    text-align: center;
     width: 1550px;
     margin: auto;
-    text-align: center;
 }
 .valueSolution h2{
     font-size: 68px;

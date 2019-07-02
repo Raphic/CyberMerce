@@ -1,0 +1,128 @@
+footer{
+    font-family: var(--font-h1);
+}
+footer > div{
+    width: var(--origin-width);
+    margin: auto;
+    padding: 78px 0 45px;
+}
+footer p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.footerTop{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2px solid #636464;
+}
+.footerTop > div:first-child {
+    width: 340px;
+}
+.footerTop > div:first-child .logo{
+    margin-bottom: 50px;
+}
+.footerTop > div:first-child p{
+    margin: 0 auto 40px;
+} 
+.footerTop > div:nth-child(2) {
+    width: 115px;
+}
+.footerTop > div:nth-child(3) {
+    width: 350px;
+}
+.footerTop > div:nth-child(4) {
+    width: 160px;
+    margin-top: 45px;
+}
+
+.footerTop > ul li{
+    margin: 17px 0;
+}
+.footerTop > ul li:first-child{
+    margin-top: 20px;
+}
+.footerTop > ul li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footerTop > div:nth-child(3) h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px auto 33px;
+}
+.footerTop > div:nth-child(3) ul li{
+    margin-right: 30px;
+    margin-bottom: 14px;
+}
+.footerTop > div:nth-child(3) ul li a{
+    height: 45px;
+    display: inline-block;
+}
+.footerTop > div:nth-child(3) h3:nth-child(3){
+    margin: 45px auto 7px;
+}
+
+.footerTop .sub-email {
+    width: 350px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footerTop .sub-email input{
+    width: calc(100% - 86px);
+    height: 45px;
+    padding: 15px 12px 13px;
+}
+.footerTop .sub-email input::-webkit-input-placeholder{
+    font-family: var(--font-h1);
+    font-size: 16px;
+    color: #636464;
+}
+.footerTop .sub-email input:-ms-input-placeholder{
+    font-family: var(--font-h1);
+    font-size: 16px;
+    color: #636464;
+}
+.footerTop .sub-email input::placeholder{
+    font-family: var(--font-h1);
+    font-size: 16px;
+    color: #636464;
+}
+.footerTop .sub-email button{
+    width: 86px;
+    height: 45px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    background: #1f829c url(../image/icon/arrow.png) no-repeat center center;
+}
+
+.footerTop > div:nth-child(4) img:nth-child(2){
+    margin-top: 36px;
+    margin-left: 13px;
+}
+
+.footerBottom{
+    text-align: center;
+    padding: 30px 0 20px;
+}

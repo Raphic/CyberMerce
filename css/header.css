@@ -1,7 +1,7 @@
 .menu-top{
-    width: 1550px;
+    width: var(--origin-width);
     margin: auto;
-    padding: 50px 0 90px 45px;
+    padding: 45px 0 90px 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

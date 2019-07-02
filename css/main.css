@@ -1,15 +1,18 @@
 article{
-    width: 100%;
-    background: cyan;
+    width: 1900px;
+/*    background: cyan;*/
     margin: auto;
 /*    overflow: hidden;*/
 }
-article > section{
-    width: 1550px;
-    margin: 60px auto;
+article > section > div{
+    width: var(--origin-width);
+    margin: auto;
 }
+/***Our Services
+******************************************/
 .ourServices{
-    margin-top: 63px;
+    margin: 63px auto 20px;
+    background: url(../image/background/bg-01.png) no-repeat left 50px;
 }
 .ourServices h2.title{
     margin-bottom: 30px;
@@ -25,16 +28,18 @@ article > section{
     height: 134px;
     margin: 0 auto 70px;
 }
-
+/***Why Choose
+******************************************/
 .whyChoose{
-    margin-top: 227px;
+    padding-top: 227px;
+    background: url(../image/background/bg-02.png) no-repeat left top;
 }
 .whyChoose .wrapt-img{
     float: left;
     margin-right: 40px;
 }
-
-
+/***Our Products
+******************************************/
 .ourProducts{
     margin-top: 166px;
 }
@@ -63,7 +68,8 @@ article > section{
     width: 100%;
     height: 110px;
 }
-
+/***Client Say
+******************************************/
 .clientSay{
     margin-top: 137px;
 }
@@ -79,7 +85,8 @@ article > section{
     background: var(--bg-client);
     position: relative;
 }
-
+/***Our Technology
+******************************************/
 .ourTechnology{
     width: 100%;
     background:#242424 url(../image/background/bg-technology.png) no-repeat top center;
@@ -105,7 +112,7 @@ article > section{
     margin-top: 33px;
 }
 .ourTechnology .list-0{
-    width: 1550px;
+    width: var(--origin-width);
     margin: 83px auto 70px;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
@@ -115,18 +122,22 @@ article > section{
     width: 25%;
     margin-bottom: 100px;
 }
-
-
+/***Value Solution
+******************************************/
 .valueSolution{
     width: 100%;
     font-family: var(--font-h2);
     background: #e5e5e5;
-    padding: 45px 0 40px;
+    padding: 40px 0;
+    margin: 0 auto;
 }
 .valueSolution > .flex{
     text-align: center;
-    width: 1550px;
+    width: var(--origin-width);
     margin: auto;
+}
+.valueSolution > .flex > div{
+    width: 25%;
 }
 .valueSolution h2{
     font-size: 68px;
@@ -136,16 +147,5 @@ article > section{
     font-size: 24px;
     line-height: 0.8em;
     margin-bottom: 0;
-}
-
-.footerTop{
-    width: 1550px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    margin-top: 30px;
 }

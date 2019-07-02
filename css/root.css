@@ -25,6 +25,8 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root{
@@ -35,6 +37,7 @@
     --color-02: #037f9f;
     --color-03: #2086a0;
     --bg-client: #2e6160;
+    --origin-width: 1550px;
 }
 
 html, body {
@@ -61,7 +64,7 @@ h1.title{
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     position: relative;
 }
 h1.title:after{
@@ -71,7 +74,7 @@ h1.title:after{
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(169, 169, 169, 0.75)), to(rgba(0, 0, 0, 0)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(169, 169, 169, 0.75), rgba(0, 0, 0, 0));
     display: block;
-    margin-top: 20px;
+    margin-top: 24px;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -118,6 +121,11 @@ section:after{
     -ms-flex-align: baseline;
     align-items: baseline
 }
+.align-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 .wrapt-img{
     position: relative;
     overflow: hidden;
@@ -139,12 +147,12 @@ section:after{
     font-family: var(--font-h2);
     list-style: none;
     margin: 0;
-    padding: 20px 110px 40px 65px;
+    padding: 22px 110px 38px 60px;
 }
 .list-01 li{
     font-size: 22px;
     height: 26px;
-    padding:5px 0 10px;
+    padding: 10px 0 15px;
     margin-left: 40px;
     border-bottom: 1px solid #cbcbcb;
     -webkit-box-sizing: content-box;
@@ -158,6 +166,7 @@ section:after{
     display: block;
     position: absolute;
     left: -40px;
+    top: 15px;
     background: url(../image/icon/list-01.png) no-repeat center center;
 }
 .list-01 li a{

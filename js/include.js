@@ -9,6 +9,7 @@ function isIE() {
 /* Main js========================================================*/
 include('js/jquery-3.4.1.min.js');
 include('js/jquery-ui.min.js');
+include('js/swiper.min.js');
 include('js/script.js');
 //include(domain + '/js/jquery.mCustomScrollbar.js');
 //include('js/swiper.min.js');

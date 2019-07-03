@@ -70,12 +70,12 @@ footer p {
     display: inline-block;
 }
 .footerTop > div:nth-child(3) h3:nth-child(3){
-    margin: 45px auto 7px;
+    margin: 45px auto 20px;
 }
 
 .footerTop .sub-email {
     width: 350px;
-    margin-top: 10px;
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,13 +116,11 @@ footer p {
     cursor: pointer;
     background: #1f829c url(../image/icon/arrow.png) no-repeat center center;
 }
-
-.footerTop > div:nth-child(4) img:nth-child(2){
-    margin-top: 36px;
+.footerTop > div:nth-child(4) a:nth-child(2){
+    margin-top: 30px;
     margin-left: 13px;
 }
-
 .footerBottom{
     text-align: center;
-    padding: 30px 0 20px;
+    padding: 30px 0 35px;
 }

@@ -1,5 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
+.menu-main a:hover,
+.menu-main a.current,
+.menu-footer a:hover,
+.menu-footer a.current{
+    color: var(--color-current);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
 
 .btn{
 }

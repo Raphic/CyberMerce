@@ -1,8 +1,6 @@
 article{
-    width: 1900px;
+    width: 100%;
 /*    background: cyan;*/
-    margin: auto;
-/*    overflow: hidden;*/
 }
 article > section > div{
     width: var(--origin-width);
@@ -46,7 +44,8 @@ article > section > div{
 .proItem{
     width: 358px;
     height: 358px;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
+    margin-right: 39px;
     background: #ededed;
     text-align: center;
     display: -webkit-box;
@@ -68,10 +67,13 @@ article > section > div{
     width: 100%;
     height: 110px;
 }
+.proItem:nth-child(4n){
+    margin-right: 0;
+}
 /***Client Say
 ******************************************/
 .clientSay{
-    margin-top: 137px;
+    margin-top: 83px;
 }
 .clientSay .title{
     font-size: 36px;
@@ -79,12 +81,20 @@ article > section > div{
     padding-left: 72px;
     padding-right: 85px;
     letter-spacing: 3.97px;
+    margin-bottom: 50px;
 }
 .clientSay .title:after{
+    width: calc(100% - 460px);
     height: 5px;
     background: var(--bg-client);
-    position: relative;
+    -webkit-transform: none;
+    transform: none;
+    transform: none;
+    left: inherit;
+    right: 0;
+    bottom: 0;
 }
+
 /***Our Technology
 ******************************************/
 .ourTechnology{
@@ -95,7 +105,7 @@ article > section > div{
     color: #fff;
     text-align: center;
     margin: 134px auto 0;
-    padding: 60px 0 20px;
+    padding: 60px 0 0px;
 } 
 .ourTechnology .title{
     color: #fff;
@@ -113,14 +123,14 @@ article > section > div{
 }
 .ourTechnology .list-0{
     width: var(--origin-width);
-    margin: 83px auto 70px;
+    margin: 83px auto 0;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline
 }
 .ourTechnology .list-0 li{
     width: 25%;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 /***Value Solution
 ******************************************/
@@ -140,8 +150,17 @@ article > section > div{
     width: 25%;
 }
 .valueSolution h2{
-    font-size: 68px;
+    font-size: 72px;
+    font-weight: 500;
     color: var(--color-01);
+}
+.valueSolution h2:after{
+    content: '+';
+    font-size: 40px;
+    font-weight: 300;
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: -5px;
 }
 .valueSolution p {
     font-size: 24px;

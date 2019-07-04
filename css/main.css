@@ -6,6 +6,87 @@ article > section > div{
     width: var(--origin-width);
     margin: auto;
 }
+.bg-banner{
+    background-size: contain;
+    width: 1900px;
+    height: 325px;
+    margin-top: -15px;
+}
+.bg-banner h1{
+    display: block;
+    width: var(--origin-width);
+    font-family: var(--font-h1);
+    margin: auto;
+    padding-top: 45px;
+    padding-left: 65px;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+.bg-banner h1 span{
+    font-weight: 600;
+    color: var(--color-01);
+    
+}
+.services-page .bg-banner{
+    background: url(../image/background/bg-services.png) no-repeat left top;
+}
+.contact-page .bg-banner{
+    background: url(../image/background/bg-contact.png) no-repeat left top;
+}
+
+.bg-banner-01{
+    background: url(../image/background/bg-about.png) no-repeat left top;
+    width: 1900px;
+    height: 494px;
+    position: relative;
+    text-align: center;
+}
+.bg-banner-01::after{
+    content: '';
+    background:  rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.bg-banner-01 > div{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2
+}
+.bg-banner-01 h1{
+    color: var(--color-04);
+    font-family: var(--font-h3);
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 10px;
+}
+.bg-banner-01 p{
+    color: #fff;
+    font-family: var(--font-h2);
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    line-height: 30px
+}
+.font-futura{
+    color: #000;
+    font-family: var(--font-h2);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.underline{
+    text-decoration: underline;
+}
 /***Our Services
 ******************************************/
 .ourServices{
@@ -20,11 +101,21 @@ article > section > div{
     border-right: 1px solid #222021;
 }
 .ourServices .serItem{
+    
 }
 .ourServices .wrapt-img{
     width: 132px;
     height: 134px;
     margin: 0 auto 70px;
+}
+.ourServices.no-border {
+    background: none;
+}
+.ourServices.no-border .serItem:nth-child(2) .list-01{
+    border: none;
+}
+.ourServices .btn-02{
+    margin: 15px auto 0 60px;
 }
 /***Why Choose
 ******************************************/
@@ -75,16 +166,18 @@ article > section > div{
 .clientSay{
     margin-top: 83px;
 }
+.clientSay > div{
+    width: 1400px;
+    margin: auto;
+}
 .clientSay .title{
     font-size: 36px;
     text-align: left;
-    padding-left: 72px;
-    padding-right: 85px;
     letter-spacing: 3.97px;
     margin-bottom: 50px;
 }
 .clientSay .title:after{
-    width: calc(100% - 460px);
+    width: calc(100% - 390px);
     height: 5px;
     background: var(--bg-client);
     -webkit-transform: none;
@@ -94,7 +187,63 @@ article > section > div{
     right: 0;
     bottom: 0;
 }
-
+.doubleSlider{
+    width: 1400px;
+    margin: auto;
+}
+.doubleSlider .swiper-container{
+    height: 335px;
+}
+.doubleSlider .swiper-wrapper{
+    height: auto;
+}
+.doubleSlider .swiper-slide{
+    width: 685px;
+    height: 210px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 6px solid #d3d4d7;
+    margin-top: 25px;
+}
+.doubleSlider .swiper-slide img{
+    width: 204;
+    height: 256px;
+    margin: -27px 25px -27px 10px;
+}
+.doubleSlider .swiper-slide p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 10px 10px 0; 
+}
+.doubleSlider .swiper-slide .author{
+    font-family: var(--font-h2);
+    font-size: 18px;
+    line-height: 0.7em;
+    position: absolute;
+    bottom: 20px;
+    right: 14px;
+    color: var(--color-01);
+    text-transform: uppercase;
+}
+.doubleSlider .swiper-pagination-bullet{
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    opacity: 1;
+}
+.doubleSlider .swiper-pagination-bullet-active{
+    width: 18px;
+    height: 18px;
+    background-color: #08add6;
+}
+.doubleSlider .swiper-container-horizontal>.swiper-pagination-bullets, 
+.doubleSlider .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0;
+}
 /***Our Technology
 ******************************************/
 .ourTechnology{
@@ -166,5 +315,93 @@ article > section > div{
     font-size: 24px;
     line-height: 0.8em;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+/***Contact Page
+******************************************/
+.contact > div{
+    padding: 120px 0 80px 110px;
+}
+.contact .title{
+    font-family: var(--font-h3);
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: unset;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.contact .title:after{
+    background: var(--color-01);
+    height: 5px;
+    width: 160px;
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.contact .title + p{
+    font-family: var(--font-h2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.contact-frm{
+    margin-top: -10px;
+}
+.captcha,
+.contact-frm .btn-01{
+    margin-top: 43px;
+}
+.warpt-input{
+    width: 785px;
+    margin-top: 55px;
+}
+.warpt-input input,
+.warpt-input textarea{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #959595;
+    padding: 28px 0 20px 18px;
+}
+.warpt-input textarea{
+    min-height: 165px;
+    padding: 0 0 0 17px;
+}
+
+.warpt-input input::-webkit-input-placeholder,
+.warpt-input textarea::-webkit-input-placeholder{
+    font-family: var(--font-h2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+}
+.warpt-input input:-ms-input-placeholder,
+.warpt-input textarea:-ms-input-placeholder{
+    font-family: var(--font-h2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+}
+.warpt-input input::placeholder,
+.warpt-input textarea::placeholder{
+    font-family: var(--font-h2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+}
+/***Services Page
+******************************************/
+.services-page .ourServices{
+    margin: 134px auto 207px;
+}
+/***About Page
+******************************************/
+.about{
+    padding: 90px 0 110px 0;
+}
+.about-page .ourServices{
+    margin-bottom: 97px;
 }

@@ -36,6 +36,7 @@
     --color-01: #5ca62f;
     --color-02: #037f9f;
     --color-03: #2086a0;
+    --color-04: #08add6;
     --color-current: #08add6;
     --bg-client: #2e6160;
     --origin-width: 1550px;
@@ -59,16 +60,19 @@ h1,h2,h3{
 }
 a{
     display: inline-block;
+    color: #000;
+    text-decoration: none;
 }
 h1.title{
     font-family: var(--font-h1);
     font-size: 48px;
     font-weight: 400;
-    letter-spacing: 5.29px;
+/*    letter-spacing: 5.29px;*/
+    letter-spacing: 10px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     position: relative;
 }
 h1.title:after{

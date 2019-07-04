@@ -9,9 +9,37 @@
     transition: 0.3s all;
 }
 
-.btn{
+.proItem .active,
+.proItem:hover{
+    background: #384047;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
 }
-.btn:hover,
-.btn:focus{
+.proItem:hover h3{
+    color: #fff;
+}
+.btn{
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: var(--font-h2);
+    font-size: 18px;
+    background-color: #78c44b;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-01{
+    width: 239px;
+    height: 66px;
+    
+}
+.btn-01:hover,
+.btn-01:focus{
    
+}
+.btn-02{
+    width: 199px;
+    height: 46px;
+    line-height: 46px;
 }

@@ -87,6 +87,15 @@ article > section > div{
 .underline{
     text-decoration: underline;
 }
+.title-none .title{
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 0.8em;
+    margin-bottom: 80px;
+}
+.title-none .title:after{
+    content: none;
+}
 /***Our Services
 ******************************************/
 .ourServices{
@@ -404,4 +413,31 @@ article > section > div{
 }
 .about-page .ourServices{
     margin-bottom: 97px;
+}
+/***Products Page
+******************************************/
+.productsPage{
+    background: url(../image/background/bg-products.png) no-repeat left top;
+    background-size: contain;
+}
+.productsPage > div{
+    padding: 0 100px 110px;
+}
+.productsPage-item{
+    width: calc(50% - 75px);
+    text-align: center;
+    margin-bottom: 55px;
+}
+.productsPage-item:last-child{
+    width: 1035px;
+    margin: auto;
+}
+.productsPage-item .title{
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+}
+.productsPage-item .title + p {
+    text-align: justify;
 }

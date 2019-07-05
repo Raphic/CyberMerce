@@ -87,14 +87,28 @@ article > section > div{
 .underline{
     text-decoration: underline;
 }
-.title-none .title{
+.title-none{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.title-none h1.title{
     font-size: 56px;
     font-weight: 400;
     line-height: 0.8em;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
-.title-none .title:after{
+.title-none h1.title:after{
     content: none;
+}
+.title-none h3.title{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner-img{
+    text-align: center;
+    margin-bottom: 35px;
 }
 /***Our Services
 ******************************************/
@@ -406,6 +420,19 @@ article > section > div{
 .services-page .ourServices{
     margin: 134px auto 207px;
 }
+/***Services Item01 Page
+******************************************/
+.servicesItem > div{
+    width: var(--content-width);
+    margin: 0 auto 120px;
+}
+.servicesItem .font-futura{
+    font-size: 18px;
+    font-weight: 500;
+}
+.servicesItem p{
+    text-align: justify;
+}
 /***About Page
 ******************************************/
 .about{
@@ -421,7 +448,8 @@ article > section > div{
     background-size: contain;
 }
 .productsPage > div{
-    padding: 0 100px 110px;
+    width: var(--content-width);
+    margin: auto;
 }
 .productsPage-item{
     width: calc(50% - 75px);

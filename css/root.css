@@ -40,6 +40,7 @@
     --color-current: #08add6;
     --bg-client: #2e6160;
     --origin-width: 1550px;
+    --other-width: 1400px;
     --content-width: 1350px;
 }
 
@@ -195,10 +196,12 @@ section:after{
     display: block;
     position: absolute;
     left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 17px;
     background: var(--color-01);
+}
+.list-02.img-right{
+    width: calc(100% - 439px - 55px);
+    text-align: justify;
 }
 .img200-300{
     width: 300px;

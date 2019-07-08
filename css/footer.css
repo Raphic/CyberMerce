@@ -94,6 +94,8 @@ footer p {
     width: calc(100% - 86px);
     height: 45px;
     padding: 15px 12px 13px;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
 }
 .footerTop .sub-email input::-webkit-input-placeholder{
     font-family: var(--font-h1);
@@ -117,6 +119,8 @@ footer p {
     display: inline-block;
     cursor: pointer;
     background: #1f829c url(../image/icon/arrow.png) no-repeat center center;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
 }
 .footerTop > div:nth-child(4) a:nth-child(2){
     margin-top: 30px;

@@ -8,31 +8,114 @@
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
 }
-
-.proItem .active,
-.proItem:hover{
-    background: #384047;
-    -webkit-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
+.menu-footer a:hover{
+    text-decoration: underline;    
 }
-.proItem .active h3,
+
+.proItem.active{
+    background: #384047;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+.proItem.active h3,
 .proItem:hover h3{
     color: #fff;
+    -webkit-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+.proItem:before,
+.proItem:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.proItem:before{
+    background: rgba(237,237,237,1);
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.proItem:after{
+    background: rgba(56,64,71,1);
+    -webkit-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+}
+.proItem:hover:before{
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+}
+.proItem:hover:after{
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
 }
 
 .porfolioItem.active,
 .porfolioItem:hover{
     
 }
-.porfolioItem.active .porfolioText,
-.porfolioItem:hover .porfolioText{
+
+.porfolioItem.active .porfolioText{
     color: #072221;
     background: var(--color-01);
 }
-.porfolioItem.active .wrapt-img:before,
-.porfolioItem:hover .wrapt-img:before{
+.porfolioItem.active .wrapt-img:before{
     background: rgba(92,166,47,0.5);
 }
+
+.porfolioItem .wrapt-img:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(92,166,47,0.5);
+    -webkit-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+}
+.porfolioItem:hover .wrapt-img:before{
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+}
+.porfolioItem:hover .wrapt-img img{
+    -webkit-transform: translate(-50%,-50%) scale(1.2, 1.2) rotate(-10deg);
+    transform: translate(-50%,-50%) scale(1.2, 1.2) rotate(-10deg);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.porfolioText:before{
+    content: '';
+    background: var(--color-01);
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+    z-index: 1;
+}
+.porfolioItem:hover .porfolioText{
+    color: #072221;
+}
+.porfolioItem:hover .porfolioText:before{
+    height: 100%;
+}
+
 
 .btn{
     border-radius: 3px;
@@ -41,10 +124,54 @@
     font-weight: 500;
     font-family: var(--font-h2);
     font-size: 18px;
-    background-color: #78c44b;
+    background: transparent;
     cursor: pointer;
     text-align: center;
+    position: relative;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    z-index: 3;
 }
+.btn:before,
+.btn:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.btn:before{
+    left: -2px;
+    z-index: 1;
+    opacity: 0;
+    border: 2px solid rgba(120,196,75,0.5);
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+}
+.btn:after {
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    background: rgba(120,196,75,1);
+}
+.btn:hover{
+    color: rgba(120,196,75,1);
+}
+.btn:hover:before {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.btn:hover:after {
+    -webkit-transform: scale(1, 0.1);
+    transform: scale(1, 0.1);
+    opacity: 0;
+}
+
+
 .btn-01{
     width: 239px;
     height: 66px;
@@ -59,4 +186,15 @@
     height: 46px;
     line-height: 46px;
     padding: 0 42px;
+}
+
+.sub-email input:focus{
+    width: calc(100% - 30px);
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+}
+.sub-email button:hover{
+    width: 120px;
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
 }

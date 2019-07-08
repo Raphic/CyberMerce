@@ -113,8 +113,9 @@ article > section > div{
 /***Our Services
 ******************************************/
 .ourServices{
-    margin: 63px auto 20px;
-    background: url(../image/background/bg-01.png) no-repeat left 50px;
+    margin-top: 15px;
+    padding: 45px 0 20px;
+    background: url(../image/background/bg-01.png) no-repeat left 10px;
 }
 .ourServices h2.title{
     margin-bottom: 30px;
@@ -160,7 +161,6 @@ article > section > div{
     height: 358px;
     margin-bottom: 54px;
 /*    margin-right: 39px;*/
-    background: #ededed;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,6 +173,7 @@ article > section > div{
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    position: relative;
 }
 .proItem:last-child img{
     margin-top: 80px;
@@ -390,7 +391,6 @@ article > section > div{
 }
 .warpt-input textarea{
     min-height: 165px;
-    padding: 0 0 0 17px;
 }
 
 .warpt-input input::-webkit-input-placeholder,
@@ -416,6 +416,15 @@ article > section > div{
     font-weight: 500;
     line-height: 30px;
     color: #000;
+}
+.warpt-input textarea::-webkit-input-placeholder{
+    line-height: 15px;
+}
+.warpt-input textarea:-ms-input-placeholder{
+    line-height: 15px;
+}
+.warpt-input textarea::placeholder{
+    line-height: 15px;
 }
 /***Services Page
 ******************************************/
@@ -518,8 +527,14 @@ article > section > div{
     padding: 12px 15px 7px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    position: relative;
 }
 .porfolioItem .porfolioText h2{
     font-size: 48px;
     margin-bottom: 5px;
+}
+.porfolioItem .porfolioText h2,
+.porfolioItem .porfolioText h2 + p{
+    position: relative;
+    z-index: 2;
 }

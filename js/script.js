@@ -29,3 +29,9 @@ var swiper = new Swiper('.doubleSlider .swiper-container', {
         clickable: true,
     },
 });
+
+wow = new WOW({
+    animateClass: 'animated',
+    offset: 100,
+});
+wow.init();

@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap&subset=latin-ext');
 /*================== Import style ==================*/
 @import "../css/swiper.min.css";
+@import "../css/animation.css";
 
 @import "../css/root.css";
 @import "../css/header.css";

@@ -15,9 +15,25 @@
     -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
 }
+.proItem .active h3,
 .proItem:hover h3{
     color: #fff;
 }
+
+.porfolioItem.active,
+.porfolioItem:hover{
+    
+}
+.porfolioItem.active .porfolioText,
+.porfolioItem:hover .porfolioText{
+    color: #072221;
+    background: var(--color-01);
+}
+.porfolioItem.active .wrapt-img:before,
+.porfolioItem:hover .wrapt-img:before{
+    background: rgba(92,166,47,0.5);
+}
+
 .btn{
     border-radius: 3px;
     border: none;

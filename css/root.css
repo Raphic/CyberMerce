@@ -98,7 +98,7 @@ h1.title span{
 h2.title{
     font-family: var(--font-h2);
     color: var(--color-03);
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
 }
 h3.title{
@@ -159,7 +159,8 @@ section:after{
     font-family: var(--font-h2);
     list-style: none;
     margin: 0;
-    padding: 22px 110px 38px 60px;
+/*    padding: 22px 110px 38px 60px;*/
+    padding: 22px 110px 35px 60px;
 }
 .list-01 li{
     font-size: 22px;
@@ -180,6 +181,7 @@ section:after{
     left: -40px;
     top: 15px;
     background: url(../image/icon/list-01.png) no-repeat center center;
+    background-size: contain;
 }
 .list-01 li a{
 }

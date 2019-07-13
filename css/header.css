@@ -44,7 +44,9 @@
 .logo img{
     max-width: 100%;
 }
-
+.slider-main img{
+    max-width: 100%;
+}
 .slider-main h1{
     width: 700px;
     font-family: var(--font-h1);

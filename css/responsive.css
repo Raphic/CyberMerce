@@ -1,22 +1,146 @@
 /* 1200px 
 ----------------------------------------------------------*/
 @media only screen and (max-width: 1200px) {
-
+    :root {
+        --origin-width: 1140px;
+        --other-width: 1030px;
+        --content-width: 1350px;
+    }
+    html, body{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .menu-top{
+        padding: 30px 0 60px 30px;
+    }
+    .menu-main{
+        width: 550px;
+        font-size: 16px;
+        
+    }
+    h1.title{
+        font-size: 32px;
+        margin-bottom: 70px;
+    }
+    h2.title{
+        font-size: 26px;
+    }
+    h3.title{
+        font-size: 16px;
+        line-height: 18px;
+        height: 74px;
+    }
+    .list-01{
+        padding: 20px 25px 35px 35px;
+    }
+    .list-01 li{
+        font-size: 20px;
+        padding: 7px 0 10px;
+    }
+    .list-01 li:before{
+        width: 16px;
+        height: 17px;
+        left: -30px;
+        top: 13px;
+    }
+    .slider-main h1{
+        width: 470px;
+        font-size: 46px;
+        left: 145px;
+        top: 55px;
+    }
+    .slider-main .swiper-container-horizontal>.swiper-pagination-bullets, 
+    .slider-main .swiper-pagination-custom, 
+    .swiper-pagination-fraction{
+        bottom: 62px;
+        left: 250px;
+    }
+    .doubleSlider .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+    }
+    .doubleSlider .swiper-container{
+        height: 300px;
+    }
+    .ourServices .wrapt-img{
+        width: 88px;
+        height: 90px;
+    }
+    .proItem{
+        width: calc( 25% - 20px);
+        height: 255px;
+        margin-bottom: 36px;
+    }
+    .proItem img{
+        max-width: 100%;
+    }
+    .whyChoose{
+        padding-top: 150px;
+    }
+    .ourProducts{
+        margin-top: 110px;
+    }
+    .clientSay .title{
+        font-size: 30px;
+    }
+    .doubleSlider{
+        width: 935px;
+    }
+    .ourTechnology{
+        background-size: cover;
+        margin-top: 90px;
+    }
+    .ourTechnology .list-0 li{
+        margin-bottom: 75px;
+    }
+    .valueSolution{
+        padding: 30px 0;
+    }
+    .valueSolution h2{
+        font-size: 48px;
+    }
+    .valueSolution p{
+        font-size: 18px;
+        margin-top: 7px;
+    }
+    footer p,
+    .footerTop > ul li a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    footer > div{
+        padding: 52px 0 30px;
+    }
+    .footerBottom{
+        padding: 20px 0 25px;
+    }
 }
 /* 992px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
-
+    :root {
+        --origin-width: 960px;
+        --other-width: 1400px;
+        --content-width: 1350px;
+    }
 }
 /* 768px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
- 
+    :root {
+        --origin-width: 720px;
+        --other-width: 1400px;
+        --content-width: 1350px;
+    }
 }
 /* 576px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
-  
+    :root {
+        --origin-width: 540px;
+        --other-width: 1400px;
+        --content-width: 1350px;
+    }
 }
 /* 320px
 ----------------------------------------------------------*/

@@ -116,6 +116,7 @@ article > section > div{
     margin-top: 15px;
     padding: 45px 0 20px;
     background: url(../image/background/bg-01.png) no-repeat left 10px;
+    background-size: contain;
 }
 .ourServices h2.title{
     margin-bottom: 30px;
@@ -125,7 +126,7 @@ article > section > div{
     border-right: 1px solid #222021;
 }
 .ourServices .serItem{
-    
+    width: 33.33%;
 }
 .ourServices .wrapt-img{
     width: 132px;
@@ -146,10 +147,17 @@ article > section > div{
 .whyChoose{
     padding-top: 227px;
     background: url(../image/background/bg-02.png) no-repeat left top;
+    background-size: contain;
+}
+.whyChoose > div {
+    width: var(--other-width);
 }
 .whyChoose .wrapt-img{
     float: left;
     margin-right: 40px;
+}
+.whyChoose p{
+    text-align: justify;
 }
 /***Our Products
 ******************************************/
@@ -157,7 +165,8 @@ article > section > div{
     margin-top: 166px;
 }
 .proItem{
-    width: 358px;
+/*    width: 358px;*/
+    width: calc( 25% - 30px);
     height: 358px;
     margin-bottom: 54px;
 /*    margin-right: 39px;*/

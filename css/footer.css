@@ -1,6 +1,7 @@
 footer{
     font-family: var(--font-h1);
     background-color: #f8f8f8;
+    text-align: justify;
 /*    overflow: hidden;*/
 }
 footer > div{

@@ -1,10 +1,15 @@
 article{
     width: 100%;
+    overflow: hidden;
 /*    background: cyan;*/
 }
 article > section > div{
     width: var(--origin-width);
     margin: auto;
+}
+#burger,
+.mb-logo{
+    display: none;
 }
 .bg-banner{
     background-size: contain;
@@ -190,6 +195,9 @@ article > section > div{
 .proItem h3{
     width: 100%;
     height: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 /*
 .proItem:nth-child(4n){
@@ -223,7 +231,7 @@ article > section > div{
     bottom: 0;
 }
 .doubleSlider{
-    width: 1400px;
+    width: var(--other-width);
     margin: auto;
 }
 .doubleSlider .swiper-container{
@@ -285,7 +293,7 @@ article > section > div{
     width: 100%;
     background:#242424 url(../image/background/bg-technology.png) no-repeat top center;
     background-origin: content-box;
-    background-size: 100%;
+    background-size: cover;
     color: #fff;
     text-align: center;
     margin: 134px auto 0;

@@ -38,6 +38,18 @@
     footer > div{
         padding: 3.5em 4em 2em;
     }
+    
+    .porfolio > div{
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .porfolioItem{
+        margin-right: 80px;
+    }
+    .porfolioItem:nth-child(3n){
+        margin-right: 0;
+    }
 }
 /* 1350px 
 ----------------------------------------------------------*/
@@ -101,7 +113,7 @@
         margin-bottom: 36px;
     }
     .proItem img{
-        max-width: 100%;
+        max-width: var(--full-width);
     }
     .doubleSlider .swiper-pagination-bullet{
         width: 12px;
@@ -147,10 +159,30 @@
         width: 295px;
     }
     .footerTop .sub-email{
-        width: 100%;
+        width: var(--full-width);
     }
     .footerBottom{
         padding: 20px 0 25px;
+    }
+    
+    .title-none h1.title,
+    .title-none h3.title{
+        line-height: 1.2em;
+    }
+    
+    .porfolio{
+        margin-top: 100px;
+    }
+    .porfolioItem{
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 80px;
+    }
+    .porfolioItem .wrapt-img{
+        height: 330px;
+    }
+    .porfolioItem .porfolioText h2{
+        font-size: 40px;
     }
     
 }
@@ -202,7 +234,7 @@
         width: 220px;
     }
     .footerTop > div:first-child .logo{
-        width: 100%;
+        width: var(--full-width);
         margin-bottom: 2em;
     }
     .footerTop > div:nth-child(3) {
@@ -220,6 +252,39 @@
     .sub-email button:hover{
         width: 70px;
     }
+    
+    .quote01{
+        width: var(--content-width);
+    }
+    
+    .list-02.img-right{
+        width: 100%;
+    }
+    .list-02.img-right + img{
+        max-width: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        position: relative;
+    }
+    
+    .porfolio{
+        margin-bottom: -50px;
+    }
+    .porfolioItem .porfolioText h2{
+        font-size: 32px;
+    }
+    .porfolioItem .porfolioText h2 + p{
+        line-height: 1.1em;
+    }
+    .porfolioItem .wrapt-img {
+        height: 280px;
+    }
+    .productsPage-item .title{
+        font-size: 26px;
+    }
+    
+    
 }
 /* 992px
 ----------------------------------------------------------*/
@@ -241,6 +306,14 @@
     h2.title {
     font-size: 24px;
     }
+    
+    .bg-banner-01 h1{
+        font-size: 42px;
+    }
+    .bg-banner-01 p{
+        font-size: 18px;
+    }
+    
     .slider-main h1{
 /*        width: 490px;*/
         font-size: 38px;
@@ -257,6 +330,53 @@
         width: 40%;
         text-align: right;
     }
+    
+    .warpt-input{
+        width: var(--full-width);
+    }
+    .contact > div{
+        padding: 80px 0 40px 50px
+    }
+    .title-none h1.title{
+        font-size: 38px;
+        margin-top: 45px;
+    }
+    .title-none h3.title,
+    .porfolio-page .title-none h3.title{
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+    .title-none{
+        margin-bottom: 40px;
+    }
+    
+    .porfolioItem,
+    .porfolioItem:nth-child(3n){
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 3em;
+    }
+    .porfolioItem:nth-child(2n){
+        margin-right: 0;
+    }
+    .porfolioItem .wrapt-img {
+        height: 370px;
+    }
+    
+    .productsPage{
+        margin-top: 70px;
+    }
+    .productsPage-item .title {
+        font-size: 22px;
+    }
+    .productsPage-item{
+        width: calc(50% - 40px);
+    }
+    
+    .services-page .ourServices {
+        margin: 90px auto 140px;
+    }
+    
 }
 /* 768px
 ----------------------------------------------------------*/
@@ -291,7 +411,7 @@
     .menu-top.is-open {
         opacity: 1;
         z-index: 100;
-        width: 100%;
+        width: var(--full-width);
         visibility: visible;
     }
     .menu-top::before {
@@ -424,7 +544,7 @@
     .burger:before {
         content: '';
         display: block;
-        height: 100%;
+        height: var(--full-width);
         background: #fff;
         -webkit-transition: all .275s;
         transition: all .275s;
@@ -453,7 +573,7 @@
     }
     /* MENU Text part */
     .device {
-        width: 100%;
+        width: var(--full-width);
         min-height: 50px;
         position: fixed;
         top: 0;
@@ -493,16 +613,30 @@
     h1.title{
         font-size: 36px;
     }
+    h1.title:after{
+        margin-top: 10px;
+    }
     .slider-main h1{
         width: 85%;
         font-size: 28px;
     }
+    
     .ourServices .serItem{
         width: 50%;
+    }
+    .ourServices .serItem:nth-child(3){
+        width: var(--full-width);
+    }
+    .ourServices .wrapt-img{
+        margin-bottom: 30px;
+    }
+    .ourServices .serItem:nth-child(3) h2.title{
+        text-align: center;
     }
     .ourServices .serItem:nth-child(2) .list-01{
         border: none;
     }
+   
     .proItem-warpt{
         margin-right: -2em;
     }
@@ -511,11 +645,25 @@
         margin-right: 2em;
         height: 295px;
     }
+    
+    .clientSay {
+        margin-bottom: 1em;
+    }
+    
+    .slider-main .swiper-container-horizontal>.swiper-pagination-bullets, 
+    .slider-main .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 7%;
+        left: calc(50% - 40px);
+    }
+    .slider-main .swiper-pagination-bullet{
+        width: 30px;
+    }
     .doubleSlider .swiper-slide p{
         font-size: 18px;
         line-height: 1.4em;
         text-align: justify;
     }
+    
     .ourTechnology .title ~ p{
         line-height: 1.2em;
     }
@@ -523,15 +671,119 @@
         width: 33.33%;
         margin-bottom: 3em;
     }
-    .slider-main .swiper-container-horizontal>.swiper-pagination-bullets, .slider-main .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 7%;
-        left: calc(50% - 40px);
-    }
-    .slider-main .swiper-pagination-bullet{
-        width: 30px;
-    }
+    
+    
     .footerBottom {
         padding: 10px 0 15px;
+    }
+    
+    .bg-banner,
+    .bg-banner-01,
+    .services-page .bg-banner{
+        height: 180px;
+        margin-top: 50px;
+        padding: 0 4vw;
+        background-size: cover;
+    }
+    .contact-page .bg-banner{
+        background-size: cover;
+    }
+    .bg-banner h1,
+    .bg-banner-01 h1 {
+        font-size: 32px;
+    }
+    
+    .bg-banner h1{
+        
+        line-height: 1.4em;
+    }
+    .bg-banner-01 p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .about{
+        padding: 4vh 0 4vh 0;
+    }
+    .about-page .ourServices{
+        margin-bottom: 0;
+    }
+    .font-futura,
+    .contact .title + p{
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+    .contact > div {
+        padding: 80px 0 40px;
+    }
+    .contact .title{
+        font-size: 26px;
+        margin-bottom: 1.5em;
+    }
+    .contact .title:after{
+        width: 115px;
+    }
+    .warpt-input {
+        margin-top: 1.5em;
+    }
+    .captcha, 
+    .contact-frm .btn-01{
+        margin-top: 1em;
+    }
+    
+    .title-none{
+        margin-top: 100px;
+        margin-bottom: 1em;
+        padding: 0 1em;
+    }
+    .title-none h1.title{
+        font-size: 32px;
+        letter-spacing: 6px;
+        margin-bottom: 25px;
+    }
+    .title-none h3.title,
+    .porfolio-page .title-none h3.title{
+        font-size: 16px;
+        line-height: 1.2em;
+        height: inherit;
+    }
+    .banner-img{
+        margin-bottom: 1em;
+    }
+    .quote01{
+        font-size: 18px;
+        background-size: 8%;
+        padding-left: 55px;
+        width: var(--full-width);
+    }
+    .servicesItem > div{
+        margin-bottom: 60px;
+    }
+    .list-02{
+        margin-left: 25px;
+    }
+    .list-02 li {
+        padding: 5px 10px 6px 20px;
+    }
+    .list-02 li:before{
+        top: 13px;
+    }
+    
+    .porfolio{
+        margin-bottom: -40px;
+    }
+    .porfolioItem .wrapt-img {
+        height: 290px;
+    }
+    
+    .productsPage {
+        margin-top: 55px;
+    }
+    .productsPage-item {
+        width: 100%;
+    }
+    
+    .services-page .ourServices {
+        margin: 2em auto 4em;
     }
 }
 /* 667px
@@ -544,21 +796,28 @@
     .ourServices h2.title{
         text-align: center;
     }
+    
     .list-01 {
         padding: 2em 2em 3em 1.5em;
     }
     .list-01 li{
         font-size: 22px;
     }
+    
     .whyChoose {
         padding-top: 6em;
     }
+    
     .ourServices .wrapt-img{
         margin-bottom: 1em;
     }
     .ourServices .serItem{
-        width: 100%;
+        width: var(--full-width);
         margin-bottom: 3em;
+    }
+    
+    .clientSay {
+        margin-bottom: 2em;
     }
     .doubleSlider .swiper-slide{
         display: block;
@@ -581,6 +840,26 @@
         margin-top: 0;
         padding: 0 1em;
     }
+    .bg-banner-01 p{
+        line-height: 1.2em;
+    }
+    .bg-banner h1{
+        padding: 0;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+    }
+    
+    .porfolioItem .wrapt-img {
+        height: 265px;
+    }
+    .porfolioItem .porfolioText h2 {
+        font-size: 26px;
+    }
+    
+    
 }
 /* 576px
 ----------------------------------------------------------*/
@@ -603,34 +882,43 @@
         font-size: 16px;
         line-height: 26px;
     }
+    
     .list-01{
         padding-bottom: 0;
     }
+    
     .whyChoose .wrapt-img{
         margin-right: 1em;
     }
+    
     .ourProducts{
         margin-top: 5em;
     }
+    
     .proItem-warpt{
         padding: 0 1em;
         margin-right: -1em;
     }
+    
     .proItem{
         width: calc(50% - 1em);
         height: 248px;
         margin-right: 1em;
         margin-bottom: 2em;
     }
+    
     .clientSay {
         margin-top: 3em;
     }
+    
     .doubleSlider .swiper-slide p{
         margin-top: 1em;
     }
+    
     .ourTechnology .list-0 li{
         width: 50%;
     }
+    
     .valueSolution h2{
         font-size: 38px;
     }
@@ -638,30 +926,76 @@
         font-size: 16px;
         line-height: 1em;
     }
+    
     footer > div{
         padding: 2em 2em 2em;
     }
+    
     .menu-main {
         width: 80%;
     }
+    
+    .about ,
+    .contact,
+    .ourServices{
+        padding: 4vh;
+    }
+    .contact > div {
+        padding: 10px 0;
+    }
+    .captcha{
+        max-width: var(--full-width);
+    }
+    .captcha img{
+        width: var(--full-width);
+    }
+    .btn-01,
+    .btn-02{
+        width: var(--full-width);
+    }
+    
+    .title-none{
+        margin-top: 80px;
+    }
+    .title-none h1.title{
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+    .title-none h3.title,
+    .porfolio-page .title-none h3.title{
+        font-size: 14px;
+    }
+    
+    .porfolioItem .wrapt-img {
+        height: 220px;
+    }
+    
+    .productsPage-item .title {
+        font-size: 20px;
+    }
+    
+    .services-page .ourServices {
+        margin: 0.5em auto 1em;
+    }
+    .ourServices .btn-02{
+        margin: 2em 0 0;
+    }
 }
+
 /* 480px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 480px){
     .slider-main h1{
         font-size: 18px;
     }
-    .mb-logo img{
-        left: 15px;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+    
     .list-01 {
         padding: 15px 25px 25px 20px;
     }
     .list-01 li {
         font-size: 20px;
     }
+    
     h1.title{
         font-size: 28px;
         margin-bottom: 1em;
@@ -671,15 +1005,18 @@
         line-height: 22px;
         height: 54px;
     }
+    
     .clientSay .title {
         font-size: 26px;
     }
     .clientSay .title:after{
         width: calc(100% - 310px);
     }
+    
     .ourServices{
         padding-bottom: 0;
     }
+    
     .whyChoose {
         padding-top: 4em;
     }
@@ -687,14 +1024,17 @@
         float: inherit;
         margin: 0 auto 1em;
     }
+    
     .proItem{
         height: 205px;
     }
+    
     .ourTechnology .title ~ p{
         font-size: 16px;
         padding: 0 1em;
         margin-bottom: 0;
     }
+    
     .footerTop > div:nth-child(3){
         width: 100%;
     }
@@ -719,7 +1059,7 @@
         margin-top: 10px;
     }
     .footerTop > div:nth-child(4){
-        width: 100%;
+        width: var(--full-width);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -727,18 +1067,51 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+    
     footer p, .footerTop > ul li a {
         font-size: 12px;
         line-height: 18px;
     }
-    .slider-main .swiper-container-horizontal>.swiper-pagination-bullets, .slider-main .swiper-pagination-custom, .swiper-pagination-fraction{
+    
+    .slider-main .swiper-container-horizontal>.swiper-pagination-bullets, 
+    .slider-main .swiper-pagination-custom, .swiper-pagination-fraction{
         bottom: 4%;
     }
     
+    .about ,
+    .contact,
+    .ourServices {
+        padding: 2vh;
+    }
+    .font-futura {
+        font-size: 16px;
+    }    
+    
+    .title-none h1.title {
+        margin-bottom: 1em;
+    }
+    
+    .porfolio{
+        margin: 60px auto 0;
+    }
+    .porfolioItem,
+    .porfolioItem:nth-child(3n){
+        width: 100%;
+        margin: 0 0 2em;
+    }
+    .porfolioItem .porfolioText h2 {
+        font-size: 36px;
+    }
 }
 /* 320px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 320px){
+    .mb-logo img{
+        left: 15px;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    
     h1.title{
         font-size: 26px;
         letter-spacing: 3px;
@@ -771,6 +1144,26 @@
     .footerTop > div:first-child, 
     .footerTop > div:nth-child(3),
     .footerTop > div:nth-child(4){
-        width: 100%;
+        width: var(--full-width);
+    }
+    .footerTop > div:nth-child(4) a{
+        width: 50%;
+    }
+    .footerTop > div:nth-child(4) a img{
+        width: var(--full-width);
+    }
+    
+    .bg-banner, .bg-banner-01{
+        height: 120px;
+    }
+    .bg-banner-01 p{
+        font-size: 14px;
+    }
+    
+    .contact .title {
+        font-size: 20px;
+    }
+    .servicesItem > div{
+        margin-bottom: 10px;
     }
 }

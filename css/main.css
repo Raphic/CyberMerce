@@ -13,7 +13,7 @@ article > section > div{
 }
 .bg-banner{
     background-size: contain;
-    width: 1900px;
+    width: var(--full-width);
     height: 325px;
     margin-top: -15px;
 }
@@ -43,7 +43,7 @@ article > section > div{
 
 .bg-banner-01{
     background: url(../image/background/bg-about.png) no-repeat left top;
-    width: 1900px;
+    width: var(--full-width);
     height: 494px;
     position: relative;
     text-align: center;
@@ -114,6 +114,9 @@ article > section > div{
 .banner-img{
     text-align: center;
     margin-bottom: 35px;
+}
+.banner-img img{
+    max-width: 100%;
 }
 /***Our Services
 ******************************************/
@@ -385,6 +388,7 @@ article > section > div{
 .contact .title + p{
     font-family: var(--font-h2);
     font-size: 18px;
+    text-align: justify;
     font-weight: 500;
     line-height: 30px;
 }
@@ -465,6 +469,7 @@ article > section > div{
 ******************************************/
 .about{
     padding: 90px 0 110px 0;
+    text-align: justify;
 }
 .about-page .ourServices{
     margin-bottom: 97px;
@@ -474,6 +479,7 @@ article > section > div{
 .productsPage{
     background: url(../image/background/bg-products.png) no-repeat left top;
     background-size: contain;
+    margin-bottom: 100px;
 }
 .productsPage > div{
     width: var(--content-width);
@@ -488,11 +494,16 @@ article > section > div{
     width: 1035px;
     margin: auto;
 }
+.productsPage-item img{
+    max-width: 100%;
+}
 .productsPage-item .title{
     font-size: 34px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 30px 0 20px;
+    height: inherit;
+    line-height: 1.2em;
 }
 .productsPage-item .title + p {
     text-align: justify;
@@ -531,6 +542,9 @@ article > section > div{
     position: absolute;
     background: rgba(7,33,34,0.5);
     z-index: 2;
+}
+.porfolioItem .wrapt-img img{
+    width: 100%;
 }
 .porfolioItem .porfolioText{
     width: 100%;

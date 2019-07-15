@@ -39,6 +39,7 @@
     --color-04: #08add6;
     --color-current: #08add6;
     --bg-client: #2e6160;
+    --full-width: 100%;
     --origin-width: 1550px;
     --other-width: 1400px;
     --content-width: 1350px;
@@ -125,6 +126,11 @@ section:after{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.align-start{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 .align-baseline{
     -webkit-box-align: baseline;

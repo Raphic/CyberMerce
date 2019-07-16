@@ -1,0 +1,13 @@
+﻿
+  <!-- Header ------------------------->
+<header>
+    <nav class="menu-top">
+        <a class="logo" href="#">
+            <img src="/image/logo.png" alt="">
+        </a>
+        @Html.Partial("_mainmenu", "menu-main")
+    </nav>
+
+    @{Html.RenderAction("slidebanner", "home");}
+</header>
+    <!----------------------------------->

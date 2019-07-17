@@ -217,6 +217,10 @@ section:after{
     width: 300px;
     height: 200px;
 }
+.img250x170{
+    width: 250px;
+    height: 170px;
+}
 .quote01{
     width: 920px;
     padding: 5px 20px 5px 90px;

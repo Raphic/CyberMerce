@@ -569,3 +569,30 @@ article > section > div{
     position: relative;
     z-index: 2;
 }
+/***Services All Page
+******************************************/
+.servicesAllwrapt{
+    margin: 50px auto 200px;
+}
+.servicesAllitem{
+    margin-bottom: 70px;
+}
+.servicesAllitem:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.servicesAllitem .title{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.servicesAllitem .wrapt-img{
+    float: left;
+    position: relative;
+    margin: 0 25px 0 0;
+}
+.servicesAllitem .wrapt-img img{
+    border: 2px solid #3c7619;
+}
+.servicesAllitem p{
+}

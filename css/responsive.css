@@ -785,6 +785,17 @@
     .services-page .ourServices {
         margin: 2em auto 4em;
     }
+    
+    .servicesAllwrapt{
+        margin: 3em auto 4em;
+    }
+    .servicesAllitem{
+        text-align: justify;
+        margin-bottom: 2.5em;
+    }
+    .servicesAllitem .wrapt-img{
+        margin: 0 1em 0 0;
+    }
 }
 /* 667px
 ----------------------------------------------------------*/
@@ -937,7 +948,8 @@
     
     .about ,
     .contact,
-    .ourServices{
+    .ourServices,
+    .servicesAll{
         padding: 4vh;
     }
     .contact > div {
@@ -977,9 +989,40 @@
     .services-page .ourServices {
         margin: 0.5em auto 1em;
     }
+    
     .ourServices .btn-02{
         margin: 2em 0 0;
     }
+    
+    .servicesAllitem{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .servicesAllitem .title{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 0.5em;
+    }
+    .servicesAllitem .wrapt-img{
+        float: none;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .servicesAllitem .wrapt-img{
+        width: var(--full-width);
+        margin: 0.5em 0;
+    }
+    .servicesAllitem p{
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    
 }
 
 /* 480px
@@ -1102,7 +1145,10 @@
     .porfolioItem .porfolioText h2 {
         font-size: 36px;
     }
-}
+    
+    .servicesAllitem .title{
+        font-size: 18px;
+    }
 /* 320px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 320px){

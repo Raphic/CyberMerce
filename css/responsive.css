@@ -185,6 +185,22 @@
         font-size: 40px;
     }
     
+    .servicesAll .font-raleway{
+        width: calc(100% - 450px);
+    }
+    .servicesAll .serItem{
+        width: 360px;
+    }
+    .serItem .list-01 li a i.hand-detail{
+        font-size: 14px;
+    }
+    .serItem .list-01 li a i.hand-detail:before{
+        width: 14px;
+    }
+    
+    .rateStar{
+        width: 95%;
+    }
 }
 /* 1150px 
 ----------------------------------------------------------*/
@@ -284,7 +300,9 @@
         font-size: 26px;
     }
     
-    
+    .rateStar {
+        width: 100%;
+    }
 }
 /* 992px
 ----------------------------------------------------------*/
@@ -377,6 +395,17 @@
         margin: 90px auto 140px;
     }
     
+    .servicesAll .font-raleway{
+        width: 100%;
+        margin-bottom: 4em;
+    }
+    .servicesAll .serItem{
+        width: 100%;
+    }
+    
+    .rateStar span{
+        width: 37px;
+    }
 }
 /* 768px
 ----------------------------------------------------------*/
@@ -708,6 +737,7 @@
         margin-bottom: 0;
     }
     .font-futura,
+    .font-raleway,
     .contact .title + p{
         font-size: 18px;
         line-height: 1.4em;
@@ -796,6 +826,19 @@
     .servicesAllitem .wrapt-img{
         margin: 0 1em 0 0;
     }
+    
+    .servicesAll .serItem{
+        width: 100%;
+    }
+    
+    .servicesAll h4.title{
+        font-size: 22px;
+    }
+    
+    .productsPage.detail .productsPage-item, 
+    .productsPage.detail .contact{
+        width: 100%;
+    }
 }
 /* 667px
 ----------------------------------------------------------*/
@@ -870,7 +913,10 @@
         font-size: 26px;
     }
     
-    
+    .servicesAll h3.title{
+        font-size: 28px;
+        margin-bottom: 0.5em;
+    }
 }
 /* 576px
 ----------------------------------------------------------*/
@@ -1126,7 +1172,8 @@
     .ourServices {
         padding: 2vh;
     }
-    .font-futura {
+    .font-futura,
+    .font-raleway{
         font-size: 16px;
     }    
     
@@ -1149,6 +1196,21 @@
     .servicesAllitem .title{
         font-size: 18px;
     }
+    
+    .servicesAll h3.title{
+        font-size: 24px;
+    }
+    .servicesAll h4.title{
+        font-size: 20px;
+    }
+}
+/* 375px
+----------------------------------------------------------*/
+@media only screen and (max-width: 375px){
+    .rateStar span {
+        width: 38px;
+    }
+}
 /* 320px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 320px){

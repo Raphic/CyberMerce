@@ -89,6 +89,15 @@ article > section > div{
     font-weight: 500;
     line-height: 30px;
 }
+.font-raleway{
+    color: #000;
+    font-family: var(--font-h2);
+    line-height: 30px;
+    font-size: 20px;
+}
+.color-blue{
+    color: #0c36a0;
+}
 .underline{
     text-decoration: underline;
 }
@@ -508,7 +517,61 @@ article > section > div{
 .productsPage-item .title + p {
     text-align: justify;
 }
-/***Porfolio Page
+
+.productsPage.detail .productsPage-item,
+.productsPage.detail .contact{
+    width: calc(50% - 50px);
+}
+.productsPage.detail .contact .warpt-input{
+    width: 100%;
+}
+.hand-02{
+    position: relative;
+    margin-bottom: 55px;
+}
+.hand-02:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 28px;
+    border-top: 2px dashed #397b09;
+    position: absolute;
+    z-index: -1;
+}
+.hand-02:after{
+    content: '';
+    background: #fff;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.rateStar{
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 30px auto -20px;
+}
+.rateStar span{
+    width: 46px;
+    height: 44px;
+    display: inline-block;
+    
+}
+.rateStar span:nth-child(odd){
+    background: url(/image/icon/star-01.png) no-repeat center center;
+    background-size: contain;
+}
+.rateStar span:nth-child(even){
+    background: url(/image/icon/star-02.png) no-repeat center center;
+    background-size: contain;
+}
+/* Porfolio page
 ******************************************/
 .porfolio-page .title-none h3.title{
     font-size: 36px;
@@ -571,6 +634,24 @@ article > section > div{
 }
 /***Services All Page
 ******************************************/
+.servicesAll{
+    background: none;
+}
+.servicesAll h3.title{
+    font-size: 36px;
+    margin-bottom: 60px;
+    line-height: 1em;
+}
+.servicesAll h4.title{
+    font-size: 24px;
+    font-family: var(--font-h2);
+}
+.servicesAll h4.title span.color-blue{
+    font-weight: bold;
+}
+.servicesAllitem p{
+}
+
 .servicesAllwrapt{
     margin: 50px auto 200px;
 }
@@ -594,5 +675,29 @@ article > section > div{
 .servicesAllitem .wrapt-img img{
     border: 2px solid #3c7619;
 }
-.servicesAllitem p{
+
+.servicesAll .font-raleway{
+    width: calc(100% - 500px - 90px);
+    text-align: justify;
 }
+.servicesAll .serItem{
+    width: 500px;
+}
+.servicesAll .serItem .list-01{
+    padding: 0;
+}
+.serItem .list-01 li a i.hand-detail{
+    font-family: var(--font-h1);
+    font-size: 16px;
+    color: #397b09;
+    padding-left: 10px;
+}
+.serItem .list-01 li a i.hand-detail:before{
+    content: '';
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    background: url(/image/icon/hand-01.png) center center no-repeat;
+    background-size: contain;
+}
+
